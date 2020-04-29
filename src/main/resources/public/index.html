@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+    <p>Name : <input type="text" ng-model="name"></p>
+    <h1>Hello {{name}}</h1>
+</div>
+
+<style>
+    .tbl {
+        width: 100%;
+    }
+    .tbl td {
+    border: 1px solid black;
+    }
+    @media (max-width:760px) {
+        .tbl {
+            background-color: #cccccc;
+        }
+        table, thead, tbody, th, tr, td {
+            display: block;
+        }
+    }
+    div {
+        overflow-x:auto;
+        display: inline-block;
+        width: 100%;
+    }
+</style>
+
+<div>
+<table class="tbl">
+    <tr>
+        <td>one</td>
+        <td>two</td>
+        <td>three</td>
+        <td>four</td>
+    </tr>
+</table>
+</div>
+
+</body>
+</html>
